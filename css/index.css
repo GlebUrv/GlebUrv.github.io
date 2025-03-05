@@ -1,0 +1,196 @@
+body {
+  margin: 2vw;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Cascadia Code", "Berlin Sans FB", sans-serif;
+  background-image: url(../img/bg_tech.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+th {
+  text-align: left;
+  height: 20vw;
+  width: 100vw;
+  border-radius: 1em 1em 0 0;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    aliceblue,
+    aliceblue
+  );
+  opacity: 0.95;
+}
+
+.photo {
+  width: 27vw;
+  height: 27vw;
+  border: 0.4em solid rgb(95, 146, 151);
+  position: absolute;
+  top: 0.1em;
+  content: "";
+  background-image: url(../img/Me.jpg);
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+}
+
+.photo:hover {
+  box-shadow: 0vw 0vw 5vw 3vw rgb(221, 253, 253);
+}
+
+.pagetitle {
+  font-size: 5vw;
+  position: relative;
+  top: -3vw;
+  left: 35vw;
+  color: rgb(3, 73, 80);
+}
+
+.pageintro {
+  font-size: 2vw;
+  font-style: italic;
+  position: relative;
+  left: 35vw;
+  color: rgb(3, 73, 80);
+}
+
+.empty {
+  width: 2vw;
+  height: 2vw;
+  background-color: transparent;
+}
+
+.sidebar {
+  padding: 0.5em;
+  width: 17vw;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    aliceblue,
+    aliceblue,
+    aliceblue
+  );
+  opacity: 0.95;
+  box-shadow: 0 0.1em 0 0 aliceblue;
+}
+
+a {
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(2, 94, 113);
+}
+
+a:visited {
+  color: darkcyan;
+}
+
+a:hover {
+  color: blue;
+}
+
+.footer,
+.side2 {
+  background-color: aliceblue;
+  opacity: 0.95;
+}
+
+.side2 {
+  border-radius: 0 0 0 0.5em;
+}
+
+.footer {
+  border-radius: 1em;
+  padding: 1vw;
+  padding-left: 10vw;
+}
+
+.topic {
+  padding: 1em;
+  opacity: 0.95;
+  text-align: justify;
+}
+
+#edu {
+  background-image: linear-gradient(
+    to bottom right,
+    transparent,
+    aliceblue,
+    aliceblue,
+    aliceblue,
+    aliceblue,
+    aliceblue,
+    aliceblue
+  );
+}
+
+#work,
+#hobbies {
+  background-color: aliceblue;
+}
+
+#hobbies {
+  border-radius: 0 0 0.5em 0;
+}
+
+.topichead {
+  padding-left: 15vw;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(3, 73, 80);
+}
+
+.topicbody {
+  padding-left: 15vw;
+}
+
+#hobsub {
+  padding-left: 1em;
+}
+
+#hobsub div:nth-child(even) {
+  font-size: 0.9em;
+  margin: 0.5em;
+}
+
+#hobsub div:nth-child(odd) {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#workpic {
+  background-image: url(../img/remote.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 14vw;
+  height: 22vw;
+  content: "";
+  position: absolute;
+  border-radius: 2vw;
+  border: 2px solid slategray;
+}
+
+#edupic {
+  background-image: url(../img/Tolkienpub.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 14vw;
+  height: 25vw;
+  content: "";
+  position: absolute;
+  border-radius: 2vw;
+  border: 2px solid slategray;
+}
+
+#hobpic {
+  background-image: url(../img/guitar.jpg);
+  background-size: cover;
+  background-position: top;
+  width: 14vw;
+  height: 18vw;
+  content: "";
+  position: absolute;
+  border: 2px solid slategray;
+  border-radius: 2vw;
+}
