@@ -1,11 +1,12 @@
 body {
   margin: 2vw;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.3vw;
+  line-height: 1.5vw;
   font-family: "Cascadia Code", "Berlin Sans FB", sans-serif;
   background-image: url(../img/bg_tech.jpg);
   background-attachment: fixed;
   background-size: contain;
+  overflow-x: hidden;
 }
 
 th {
@@ -110,6 +111,7 @@ a:hover {
   padding: 1em;
   opacity: 0.95;
   text-align: justify;
+  position: relative;
 }
 
 #edu {
@@ -136,7 +138,7 @@ a:hover {
 
 .topichead {
   padding-left: 15vw;
-  font-size: 2rem;
+  font-size: 2.7vw;
   font-weight: bold;
   color: rgb(3, 73, 80);
 }
@@ -150,12 +152,13 @@ a:hover {
 }
 
 #hobsub div:nth-child(even) {
-  font-size: 0.9em;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
   margin: 0.5em;
 }
 
 #hobsub div:nth-child(odd) {
-  font-size: 1.2em;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
