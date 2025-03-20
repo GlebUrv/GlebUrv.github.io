@@ -1,153 +1,49 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Gleb Urvantsev</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-  </head>
-  <body>
-    <table>
-      <tr>
-        <th colspan="3">
-          <div class="photo"></div>
-          <div class="pagetitle">Глеб Урванцев</div>
-          <div class="pageintro">
-            Профессиональное ковыряние cмыслов с 1991 года
-          </div>
-        </th>
-      </tr>
-      <tr class="main">
-        <td class="empty"></td>
-        <td class="empty" colspan="2"></td>
-      </tr>
-      <tr>
-        <td class="sidebar">
-          <ul>
-            <li><a href="#edu">Образование</a></li>
-            <li><a href="#work">Работа</a></li>
-            <li><a href="#hobbies">Увлечения</a></li>
-            <li><a href="#contacts">Контактные данные</a></li>
-          </ul>
-        </td>
-        <td class="empty" rowspan="3"></td>
-        <td class="content">
-          <div class="topic" id="edu">
-            <div class="topichead">Образование</div>
-            <div id="edupic"></div>
-            <div class="topicbody">
-              <p>
-                Учиться я люблю. Люблю настолько, что в какой-то момент даже
-                стал кандидатом филологических наук. А все дело в том, что мне
-                всегда нравилось возиться с книжками, особенно если в них надо
-                было вместе с героями разгадать какую-нибудь загадку.
-              </p>
-              <p>
-                Больше всех на меня повлиял, скорее всего, все-таки Толкин с его
-                «Властелином колец» — пожалуй, ни один другой автор не уделяет
-                столько внимания языкам своих персонажей и ни одно другое
-                художественное произведение не вызывает столько споров о
-                правильности перевода.
-              </p>
-              <p>
-                В общем, все это замотивировало меня пойти учиться на филфак. Не
-                скажу, что учеба там была чрезвычайно интересным занятием, но я
-                о ней не жалею — как минимум, благодаря универу я отлично знаю
-                английский.
-              </p>
-              <p>
-                Сейчас я снова учусь. Казалось бы, IT и филология — это два
-                совершенно разных мира, но для меня это не так. Изучая языки
-                программирования, я использую те же механики, что и при изучении
-                иностранных языков, и знаете, что? Мне это дико нравится!
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="side2" rowspan="2"></td>
-        <td class="content">
-          <div class="topic" id="work">
-            <div id="workpic"></div>
-            <div class="topichead">Работа</div>
-            <div class="topicbody">
-              <p>
-                Моя карьера – это история о том, как достичь успеха, а потом
-                отказаться от него. Разумеется, ради чего-то большего.
-              </p>
-              <p>
-                Я десять лет проработал университетским преподавателем и даже
-                получил должность доцента, однако в какой-то момент стало ясно,
-                что перспективы роста в высшем образовании вовсе не такие
-                радужные, и я ушел.
-              </p>
-              <p>
-                Помимо преподавания, я много лет занимаюсь переводами, и
-                последние несколько лет — исключительно ими. По многим причинам,
-                это просто великолепная работа: во-первых, удаленка, а значит
-                можно работать откуда угодно, лишь бы там был стабильный
-                интернет. Во-вторых, это возможность узнавать что-то новое. Так,
-                например, благодаря моим переводческим проектам я опробовал
-                горные лыжи и занялся бегом. Разве не здорово?
-              </p>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="content">
-          <div class="topic" id="hobbies">
-            <div id="hobpic"></div>
-            <div class="topichead">Увлечения</div>
-            <div class="topicbody">
-              <p>
-                Об моих увлечениях говорить можно бесконечно долго! Я люблю
-                самые разные вещи: читать книжки, играть в видеоигры, ходить в
-                походы, путешествовать… Так что расскажу пока только о самом
-                главном.
-              </p>
-              <div id="hobsub">
-                <div>Музыка</div>
-                <div>
-                  Я очень люблю музыку, и слушать, и играть. Жанрами я себя
-                  стараюсь не ограничивать, но тяготею я, как ни крути, к року.
-                  Когда-то у нас с друзьями даже была своя группа. Сейчас я, по
-                  большей части, брякаю на гитаре дома и иногда записываю это и
-                  рассылаю друзьям.
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link href="./css/index.css" rel="stylesheet" />
+        <script defer src="index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Elbrus Super Form</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="mainHeading">Elbrus Super Form</h1>
+            <main>
+                <div class="form">
+                    <form>
+                        <label for="name">Name</label>
+                        <input class="name" id="name" type="text" />
+
+                        <label for="secondName">Second name</label>
+                        <input class="secondName" id="secondName" type="text" />
+
+                        <label for="email">Email</label>
+                        <input class="email" id="email" type="email" />
+
+                        <label for="age">Age</label>
+                        <input class="age" id="age" type="age" />
+
+                        <label for="city">City</label>
+                        <input class="city" id="city" type="city" />
+
+                        <button class="btn add">Отправить</button>
+                    </form>
+                    <button class="btn clear">Очистить localStorage</button>
                 </div>
-                <div>Фехтование (HEMA)</div>
-                <div>
-                  Какой поклонник фэнтези-РПГ не любит помахать двуручником?
-                  Мало того, что меня привлекает сама идея рубки на мечах, так
-                  это еще и отличный способ держать себя в форме и круто
-                  сообщество таких же фехтовальщиков, которые ездят по разным
-                  городам и странам, чтобы… побить друг друга железными палками.
+
+                <div class="mainUsers">
+                    <h3>Users:</h3>
+                    <div class="users"></div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td class="empty" colspan="3"></td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <div class="footer">
-            <div id="contacts">Контактные данные</div>
-            <div>
-              Со мной можно связаться по следующим каналам:
-              <ul>
-                <li><a href="https://vk.com/ghostwalker">VK</a></li>
-                <li><a href="https://f.me/FDArmstrong">Telegram</a></li>
-                <li>Электронная почта: punkhoygleb@mail.ru</li>
-              </ul>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </body>
+            </main>
+        </div>
+    </body>
 </html>

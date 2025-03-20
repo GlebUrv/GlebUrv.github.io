@@ -1,201 +1,142 @@
-body {
-  margin: 2vw;
-  font-size: 1.3vw;
-  line-height: 1.5vw;
-  font-family: "Cascadia Code", "Berlin Sans FB", sans-serif;
-  background-image: url(../img/bg_tech.jpg);
-  background-attachment: fixed;
-  background-size: contain;
-  overflow-x: hidden;
-  min-width: 1000px;
-  min-height: 2000px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Tektur, Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
-th {
-  text-align: left;
-  height: 20vw;
-  width: 100vw;
-  border-radius: 1em 1em 0 0;
-  background-image: linear-gradient(
-    to right,
-    transparent,
-    aliceblue,
-    aliceblue
-  );
-  opacity: 0.95;
+html {
+    background-image: linear-gradient(to top, cyan, darkblue);
+    height: 100%;
 }
 
-.photo {
-  width: 27vw;
-  height: 27vw;
-  border: 0.4em solid rgb(95, 146, 151);
-  position: absolute;
-  top: 0.1em;
-  content: "";
-  background-image: url(../img/Me.jpg);
-  border-radius: 50%;
-  background-position: center;
-  background-size: contain;
-  opacity: 1;
+.container {
+    margin: 0 20px;
 }
 
-.photo:hover {
-  box-shadow: 0vw 0vw 5vw 3vw rgb(221, 253, 253);
+.container * {
+    border-radius: 0.3em;
 }
 
-.pagetitle {
-  font-size: 5vw;
-  position: relative;
-  top: -3vw;
-  left: 35vw;
-  color: rgb(3, 73, 80);
+h1 {
+    text-align: center;
+    margin: 15px 0;
 }
 
-.pageintro {
-  font-size: 2vw;
-  font-style: italic;
-  position: relative;
-  left: 35vw;
-  color: rgb(3, 73, 80);
+h1,
+label,
+.btn {
+    color: papayawhip;
 }
 
-.empty {
-  width: 2vw;
-  height: 2vw;
-  background-color: transparent;
+main {
+    display: flex;
+    justify-content: space-between;
 }
 
-.sidebar {
-  padding: 0.5em;
-  width: 17vw;
-  background-image: linear-gradient(
-    to bottom,
-    transparent,
-    aliceblue,
-    aliceblue,
-    aliceblue
-  );
-  opacity: 0.95;
-  box-shadow: 0 0.1em 0 0 aliceblue;
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
 }
 
-a {
-  font-weight: 800;
-  text-decoration: none;
-  color: rgb(2, 94, 113);
+input {
+    display: block;
+    height: 30px;
+    padding-left: 1em;
 }
 
-a:visited {
-  color: darkcyan;
+input:not(:last-child) {
+    margin-bottom: 10px;
 }
 
-a:hover {
-  color: blue;
+.btn:active {
+    transform: scale(0.99);
 }
 
-.footer,
-.side2 {
-  background-color: aliceblue;
-  opacity: 0.95;
+.btn {
+    background: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
 }
 
-.side2 {
-  border-radius: 0 0 0 0.5em;
+.add {
+    outline: 3px solid green;
+    margin-bottom: 10px;
 }
 
-.footer {
-  border-radius: 1em;
-  padding: 1vw;
-  padding-left: 10vw;
+.add:hover {
+    background-color: green;
 }
 
-.topic {
-  padding: 1em;
-  opacity: 0.95;
-  text-align: justify;
-  position: relative;
+.clear {
+    outline: 3px solid red;
+    width: 50vw;
 }
 
-#edu {
-  background-image: linear-gradient(
-    to bottom right,
-    transparent,
-    aliceblue,
-    aliceblue,
-    aliceblue,
-    aliceblue,
-    aliceblue,
-    aliceblue
-  );
+.clear:hover {
+    background-color: red;
 }
 
-#work,
-#hobbies {
-  background-color: aliceblue;
+.mainUsers,
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#hobbies {
-  border-radius: 0 0 0.5em 0;
+.users,
+.user {
+    width: 40vw;
 }
 
-.topichead {
-  padding-left: 15vw;
-  font-size: 2.7vw;
-  font-weight: bold;
-  color: rgb(3, 73, 80);
+.user {
+    background-color: #f5f1f1;
+    margin-bottom: 10px;
+    padding: 0.5em;
+    color: darkblue;
+    background-color: blanchedalmond;
 }
 
-.topicbody {
-  padding-left: 15vw;
+.user-outer {
+    display: flex;
+    justify-content: space-between;
 }
 
-#hobsub {
-  padding-left: 1em;
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-#hobsub div:nth-child(even) {
-  font-size: 1.2vw;
-  line-height: 1.2vw;
-  margin: 0.5em;
+.delete,
+.change {
+    height: 40%;
+    color: darkblue;
+    padding: 0 10px;
+    border-radius: 10px;
 }
 
-#hobsub div:nth-child(odd) {
-  font-size: 1.5vw;
-  font-weight: bold;
+.delete {
+    border: 2px solid red;
 }
 
-#workpic {
-  background-image: url(../img/remote.jpg);
-  background-size: cover;
-  background-position: top;
-  width: 14vw;
-  height: 22vw;
-  content: "";
-  position: absolute;
-  border-radius: 2vw;
-  border: 2px solid slategray;
+.delete:hover {
+    background-color: red;
 }
 
-#edupic {
-  background-image: url(../img/Tolkienpub.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 14vw;
-  height: 25vw;
-  content: "";
-  position: absolute;
-  border-radius: 2vw;
-  border: 2px solid slategray;
+.change {
+    border: 2px solid green;
 }
 
-#hobpic {
-  background-image: url(../img/guitar.jpg);
-  background-size: cover;
-  background-position: top;
-  width: 14vw;
-  height: 18vw;
-  content: "";
-  position: absolute;
-  border: 2px solid slategray;
-  border-radius: 2vw;
+.change:hover {
+    background-color: green;
+}
+
+.delete:active,
+.change:active {
+    transform: scale(0.95);
 }
